@@ -45,7 +45,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(660, 847);
+  createCanvas(window.innerWidth, window.innerHeight);
   frameRate(20);
   
 
@@ -90,4 +90,8 @@ function draw() {
   //image(leafB, 560, 309);
   image(building2,130, 600);
   
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
 }
