@@ -45,7 +45,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  const parent = document.body;
+  createCanvas(parent.clientWidth, parent.clientHeight);
   frameRate(20);
   
 
@@ -93,5 +94,6 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(window.innerWidth, window.innerHeight);
+  const parent = document.body;
+  resizeCanvas(parent.clientWidth, parent.clientHeight);
 }
